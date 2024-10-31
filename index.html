@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정켄슈타인의 실험실 특성 시뮬레이터</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>정켄슈타인의 실험실 특성 시뮬레이터</h1>
+
+<div id="hero-selection">
+    <h3>영웅을 선택하세요.</h3>
+    <div id="hero-options"></div>
+</div>
+
+<div id="trait-selection" style="display:none;">
+    <h3>Round: <span id="round-number">1</span></h3>
+    <div id="trait-options"></div>
+    <button id="confirm-button" onclick="confirmSelection()">선택 확정</button>
+</div>
+
+<h3>선택한 특성</h3>
+<div id="selected-traits" class="selected-traits-container">
+    <!-- 선택된 특성이 여기서 표시됩니다. -->
+</div>
+
+<button id="reset-button" onclick="resetSimulation()">초기화</button>
+
+<script src="script.js"></script>
+</body>
+</html>

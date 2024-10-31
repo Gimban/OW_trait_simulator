@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero-selection {
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin-bottom: 20px; /* 아래 여백 추가 */
+}
+
+#hero-options {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+    gap: 10px; /* 이미지 간 간격 */
+    margin-top: 20px; /* 상단 여백 추가 */
+}
+
+#hero-selection, 
+#trait-selection, 
+#selected-traits {
+    margin-top: 20px;
+}
+
+#trait-options {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 6%;
+    height: 6%;
+}
+
+.hero-image, 
+.trait-image {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.selected {
+    border: 3px solid red;
+}
+
+.trait-large {
+    width: 150%;
+    height: 150%;
+}
+
+.selected-traits-container {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+
+.trait-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.trait-image {
+    margin-bottom: 5px;
+}
